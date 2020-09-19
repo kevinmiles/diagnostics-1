@@ -207,96 +207,96 @@ stages:
       #                          #
       ############################
 
-      - template: /eng/build.yml
-        parameters:
-          name: Debian_Stretch
-          osGroup: Linux
-          dockerImage: mcr.microsoft.com/dotnet-buildtools/prereqs:debian-stretch-3e800f1-20190521154431
-          dependsOn: CentOS_7
-          testOnly: true
-          strategy:
-            matrix:
-              Build_Debug:
-                _BuildConfig: Debug
-                _BuildArch: x64
+      # - template: /eng/build.yml
+      #   parameters:
+      #     name: Debian_Stretch
+      #     osGroup: Linux
+      #     dockerImage: mcr.microsoft.com/dotnet-buildtools/prereqs:debian-stretch-3e800f1-20190521154431
+      #     dependsOn: CentOS_7
+      #     testOnly: true
+      #     strategy:
+      #       matrix:
+      #         Build_Debug:
+      #           _BuildConfig: Debug
+      #           _BuildArch: x64
 
-      - template: /eng/build.yml
-        parameters:
-          name: Fedora_28
-          osGroup: Linux
-          dockerImage: mcr.microsoft.com/dotnet-buildtools/prereqs:fedora-28-09ca40b-20190508143249
-          dependsOn: CentOS_7
-          testOnly: true
-          strategy:
-            matrix:
-              Build_Debug:
-                _BuildConfig: Debug
-                _BuildArch: x64
+      # - template: /eng/build.yml
+      #   parameters:
+      #     name: Fedora_28
+      #     osGroup: Linux
+      #     dockerImage: mcr.microsoft.com/dotnet-buildtools/prereqs:fedora-28-09ca40b-20190508143249
+      #     dependsOn: CentOS_7
+      #     testOnly: true
+      #     strategy:
+      #       matrix:
+      #         Build_Debug:
+      #           _BuildConfig: Debug
+      #           _BuildArch: x64
 
-      - template: /eng/build.yml
-        parameters:
-          name: Fedora_29
-          osGroup: Linux
-          dockerImage: mcr.microsoft.com/dotnet-buildtools/prereqs:fedora-29-09ca40b-20190508143249
-          dependsOn: CentOS_7
-          testOnly: true
-          strategy:
-            matrix:
-              Build_Debug:
-                _BuildConfig: Debug
-                _BuildArch: x64
+      # - template: /eng/build.yml
+      #   parameters:
+      #     name: Fedora_29
+      #     osGroup: Linux
+      #     dockerImage: mcr.microsoft.com/dotnet-buildtools/prereqs:fedora-29-09ca40b-20190508143249
+      #     dependsOn: CentOS_7
+      #     testOnly: true
+      #     strategy:
+      #       matrix:
+      #         Build_Debug:
+      #           _BuildConfig: Debug
+      #           _BuildArch: x64
 
-      - template: /eng/build.yml
-        parameters:
-          name: OpenSuse_42_1
-          osGroup: Linux
-          dockerImage: mcr.microsoft.com/dotnet-buildtools/prereqs:opensuse-42.1-c103199-20180628122439
-          dependsOn: CentOS_7
-          testOnly: true
-          strategy:
-            matrix:
-              Build_Debug:
-                _BuildConfig: Debug
-                _BuildArch: x64
+      # - template: /eng/build.yml
+      #   parameters:
+      #     name: OpenSuse_42_1
+      #     osGroup: Linux
+      #     dockerImage: mcr.microsoft.com/dotnet-buildtools/prereqs:opensuse-42.1-c103199-20180628122439
+      #     dependsOn: CentOS_7
+      #     testOnly: true
+      #     strategy:
+      #       matrix:
+      #         Build_Debug:
+      #           _BuildConfig: Debug
+      #           _BuildArch: x64
 
-      - template: /eng/build.yml
-        parameters:
-          name: OpenSuse_42_3
-          osGroup: Linux
-          dockerImage: mcr.microsoft.com/dotnet-buildtools/prereqs:opensuse-42.3-3e800f1-20190501005344
-          dependsOn: CentOS_7
-          testOnly: true
-          strategy:
-            matrix:
-              Build_Debug:
-                _BuildConfig: Debug
-                _BuildArch: x64
+      # - template: /eng/build.yml
+      #   parameters:
+      #     name: OpenSuse_42_3
+      #     osGroup: Linux
+      #     dockerImage: mcr.microsoft.com/dotnet-buildtools/prereqs:opensuse-42.3-3e800f1-20190501005344
+      #     dependsOn: CentOS_7
+      #     testOnly: true
+      #     strategy:
+      #       matrix:
+      #         Build_Debug:
+      #           _BuildConfig: Debug
+      #           _BuildArch: x64
 
-      - template: /eng/build.yml
-        parameters:
-          name: Ubuntu_16_04
-          osGroup: Linux
-          dockerImage: mcr.microsoft.com/dotnet-buildtools/prereqs:ubuntu-16.04-09ca40b-20190520220842
-          dependsOn: CentOS_7
-          testOnly: true
-          strategy:
-            matrix:
-              Build_Debug:
-                _BuildConfig: Debug
-                _BuildArch: x64
+      # - template: /eng/build.yml
+      #   parameters:
+      #     name: Ubuntu_16_04
+      #     osGroup: Linux
+      #     dockerImage: mcr.microsoft.com/dotnet-buildtools/prereqs:ubuntu-16.04-09ca40b-20190520220842
+      #     dependsOn: CentOS_7
+      #     testOnly: true
+      #     strategy:
+      #       matrix:
+      #         Build_Debug:
+      #           _BuildConfig: Debug
+      #           _BuildArch: x64
 
-      - template: /eng/build.yml
-        parameters:
-          name: Ubuntu_18_04
-          osGroup: Linux
-          dockerImage: mcr.microsoft.com/dotnet-buildtools/prereqs:ubuntu-18.04-3e800f1-20190508143252
-          dependsOn: CentOS_7
-          testOnly: true
-          strategy:
-            matrix:
-              Build_Debug:
-                _BuildConfig: Debug
-                _BuildArch: x64
+      # - template: /eng/build.yml
+      #   parameters:
+      #     name: Ubuntu_18_04
+      #     osGroup: Linux
+      #     dockerImage: mcr.microsoft.com/dotnet-buildtools/prereqs:ubuntu-18.04-3e800f1-20190508143252
+      #     dependsOn: CentOS_7
+      #     testOnly: true
+      #     strategy:
+      #       matrix:
+      #         Build_Debug:
+      #           _BuildConfig: Debug
+      #           _BuildArch: x64
 
       # Download, sign, package and publish
 
